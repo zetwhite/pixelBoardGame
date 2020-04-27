@@ -29,16 +29,18 @@ svn co svn://seul.org/svn/pygame/trunk pygame
 cd pygame
 python3 setup.py build
 sudo python setup.py install 
-```
-run game
-```sh
-cd ./client
-Makefile
 python3 ./Pixel\ Board.py
 ```
 
-if you have some error, try to upgrade python version.
+if you have some errors, try to upgrade python version.
 ```sh
 sudo apt-get update
 sudo apt-get upgrade python3
+```
+
+run game and connect with server
+```sh
+cd client
+Makefile
+./login
 ```
